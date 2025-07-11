@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 479adf581f6de58489ab881b146bb3e3, type: 3}
+  m_Name: Monster
+  m_EditorClassIdentifier: 
+  monsterName: Default Monster
+  maxHealth: 100
+  healthRegenRate: 0
+  detectionRange: 10
+  attackRange: 2
+  moveSpeed: 3.5
+  chaseSpeed: 5
+  patrolSpeed: 2
+  idleDuration: 5
+  waypointChangeThreshold: 1
+  attacks:
+  - animationTrigger: attack1
+    damage: 14
+    cooldown: 0
+    range: 2
+    windupTime: 0
+    attackEffect: attack1
+  - animationTrigger: attack2
+    damage: 11
+    cooldown: 0
+    range: 2
+    windupTime: 0
+    attackEffect: attack2
+  - animationTrigger: attack3
+    damage: 5
+    cooldown: 0
+    range: 2
+    windupTime: 0
+    attackEffect: attack3
+  damageReduction: 0
+  modelPrefab: {fileID: 5288005987547715739, guid: f06aef162ebb35d43875194f708cd806, type: 3}
+  modelScale: 1
+  moveAnimationParameter: isMoving
+  attackAnimationParameter: attack
+  deathAnimationParameter: death
+  aggression: 0.5
+  alertness: 0.5
+  tenacity: 0.8
